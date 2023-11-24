@@ -10,7 +10,7 @@ const esClient = new Client({ node: 'http://localhost:9200' }); // Update with y
 // set limit of request body size
 app.use(express.json({ limit: '50mb' }));
 
-const index = 'cisresults';
+const index = 'benchmarking_final';
 
 // Log ingestion endpoint
 app.post('/ingest_single', async (req, res) => {
