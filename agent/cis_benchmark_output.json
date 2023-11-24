@@ -1,0 +1,1560 @@
+{
+  "1": {
+    "description": "Initial Setup"
+  },
+  "1.1": {
+    "description": "Filesystem Configuration"
+  },
+  "1.1.1": {
+    "description": "Disable unused filesystems"
+  },
+  "1.1.1.1": {
+    "description": "Ensure mounting of cramfs is disabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "16ms"
+  },
+  "1.1.1.2": {
+    "description": "Ensure mounting of squashfs is disabled",
+    "level": 2,
+    "result": "Fail",
+    "duration": "12ms"
+  },
+  "1.1.1.3": {
+    "description": "Ensure mounting of udf is disabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "13ms"
+  },
+  "1.1.2": {
+    "description": "Ensure /tmp is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "7ms"
+  },
+  "1.1.3": {
+    "description": "Ensure noexec option set on /tmp partition",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.1.4": {
+    "description": "Ensure nodev option set on /tmp partition",
+    "level": 1,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "1.1.5": {
+    "description": "Ensure nosuid option set on /tmp partition",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.1.6": {
+    "description": "Ensure /dev/shm is configured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "5ms"
+  },
+  "1.1.7": {
+    "description": "Ensure noexec option set on /dev/shm partition",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.1.8": {
+    "description": "Ensure nodev option set on /dev/shm partition",
+    "level": 1,
+    "result": "Pass",
+    "duration": "5ms"
+  },
+  "1.1.9": {
+    "description": "Ensure nosuid option set on /dev/shm partition",
+    "level": 1,
+    "result": "Pass",
+    "duration": "6ms"
+  },
+  "1.1.10": {
+    "description": "Ensure separate partition exists for /var",
+    "level": 2,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "1.1.11": {
+    "description": "Ensure separate partition exists for /var/tmp",
+    "level": 2,
+    "result": "Fail",
+    "duration": "4ms"
+  },
+  "1.1.12": {
+    "description": "Ensure noexec option set on /var/tmp partition",
+    "level": 1,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "1.1.13": {
+    "description": "Ensure nodev option set on /var/tmp partition",
+    "level": 1,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "1.1.14": {
+    "description": "Ensure nosuid option set on /var/tmp partition",
+    "level": 1,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "1.1.15": {
+    "description": "Ensure separate partition exists for /var/log",
+    "level": 2,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.1.16": {
+    "description": "Ensure separate partition exists for /var/log/audit",
+    "level": 2,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.1.17": {
+    "description": "Ensure separate partition exists for /home",
+    "level": 2,
+    "result": "Fail",
+    "duration": "4ms"
+  },
+  "1.1.18": {
+    "description": "Ensure nodev option set on /home partition",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.1.19": {
+    "description": "Ensure noexec option set on removable media partitions",
+    "level": 1,
+    "result": "Fail",
+    "duration": "77ms"
+  },
+  "1.1.20": {
+    "description": "Ensure nodev option set on removable media partitions",
+    "level": 1,
+    "result": "Pass",
+    "duration": "82ms"
+  },
+  "1.1.21": {
+    "description": "Ensure nosuid option set on removable media partitions",
+    "level": 1,
+    "result": "Fail",
+    "duration": "83ms"
+  },
+  "1.1.22": {
+    "description": "Ensure sticky bit is set on all world-writable directories",
+    "level": 1,
+    "result": "Manual"
+  },
+  "1.1.23": {
+    "description": "Disable Automounting",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.1.24": {
+    "description": "Disable USB Storage",
+    "level": 1,
+    "result": "Fail",
+    "duration": "13ms"
+  },
+  "1.2": {
+    "description": "Configure Software Updates"
+  },
+  "1.2.1": {
+    "description": "Ensure GPG keys are configured",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "1.2.2": {
+    "description": "Ensure package manager repositories are configured",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "1.2.3": {
+    "description": "Ensure gpgcheck is globally activated",
+    "level": 1,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "1.3": {
+    "description": "Filesystem Integrity Checking"
+  },
+  "1.3.1": {
+    "description": "Ensure AIDE is installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "1.3.2": {
+    "description": "Ensure filesystem integrity is regularly checked",
+    "level": 1,
+    "result": "Fail",
+    "duration": "19ms"
+  },
+  "1.4": {
+    "description": "Secure Boot Settings"
+  },
+  "1.4.1": {
+    "description": "Ensure bootloader password is set",
+    "level": 1,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "1.4.2": {
+    "description": "Ensure permissions on bootloader config are configured",
+    "level": 1,
+    "result": "Error",
+    "duration": "0ms"
+  },
+  "1.4.3": {
+    "description": "Ensure authentication required for single user mode",
+    "level": 1,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "1.5": {
+    "description": "Additional Process Hardening"
+  },
+  "1.5.1": {
+    "description": "Ensure core dumps are restricted",
+    "level": 1,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "1.5.2": {
+    "description": "Ensure XD/NX support is enabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "3ms"
+  },
+  "1.5.3": {
+    "description": "Ensure address space layout randomization (ASLR) is enabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.5.4": {
+    "description": "Ensure prelink is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "1.6": {
+    "description": "Mandatory Access Control"
+  },
+  "1.6.1": {
+    "description": "Configure SELinux"
+  },
+  "1.6.1.1": {
+    "description": "Ensure SELinux is installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "1.6.1.2": {
+    "description": "Ensure SELinux is not disabled in bootloader configuration",
+    "level": 1,
+    "result": "Pass",
+    "duration": "4ms"
+  },
+  "1.6.1.3": {
+    "description": "Ensure SELinux policy is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.6.1.4": {
+    "description": "Ensure the SELinux mode is enforcing or permissive",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "1.6.1.5": {
+    "description": "Ensure the SELinux mode is enforcing",
+    "level": 2,
+    "result": "Fail",
+    "duration": "7ms"
+  },
+  "1.6.1.6": {
+    "description": "Ensure no unconfined services exist",
+    "level": 1,
+    "result": "Pass",
+    "duration": "18ms"
+  },
+  "1.6.1.7": {
+    "description": "Ensure SETroubleshoot is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "1.6.1.8": {
+    "description": "Ensure the MCS Translation Service (mcstrans) is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "1.7": {
+    "description": "Command Line Warning Banners"
+  },
+  "1.7.1": {
+    "description": "Ensure message of the day is configured properly",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "1.7.2": {
+    "description": "Ensure local login warning banner is configured properly",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "1.7.3": {
+    "description": "Ensure remote login warning banner is configured properly",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "1.7.4": {
+    "description": "Ensure permissions on /etc/motd are conigured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "0ms"
+  },
+  "1.7.5": {
+    "description": "Ensure permissions on /etc/issue are conigured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "0ms"
+  },
+  "1.7.6": {
+    "description": "Ensure permissions on /etc/issue.net are conigured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "0ms"
+  },
+  "1.8": {
+    "description": "Gnome Display Manager"
+  },
+  "1.8.1": {
+    "description": "Ensure GNOME Display Manager is removed",
+    "level": 2,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "1.8.2": {
+    "description": "Ensure GDM login banner is configured",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "1.8.3": {
+    "description": "Ensure last logged in user display is disabled",
+    "level": 1,
+    "result": "Skipped",
+    "duration": "0ms"
+  },
+  "1.8.4": {
+    "description": "Ensure XDCMP is not enabled",
+    "level": 1,
+    "result": "Pass",
+    "duration": "0ms"
+  },
+  "1.9": {
+    "description": "Ensure updates, patches, and additional security software are installed",
+    "level": 1,
+    "result": "Manual"
+  },
+  "2": {
+    "description": "Services"
+  },
+  "2.1": {
+    "description": "inetd Services"
+  },
+  "2.1.1": {
+    "description": "Ensure xinetd is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "2.2": {
+    "description": "Special Purpose Services"
+  },
+  "2.2.1": {
+    "description": "Time Synchronization"
+  },
+  "2.2.1.1": {
+    "description": "Ensure time synchronisation is in use",
+    "level": 1,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "2.2.1.2": {
+    "description": "Ensure chrony is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "32ms"
+  },
+  "2.2.1.3": {
+    "description": "Ensure ntp is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "37ms"
+  },
+  "2.2.2": {
+    "description": "Ensure X11 Server components are not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "2.2.3": {
+    "description": "Ensure Avahi Server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "2.2.4": {
+    "description": "Ensure CUPS is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "2.2.5": {
+    "description": "Ensure DHCP Server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "2.2.6": {
+    "description": "Ensure LDAP server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.7": {
+    "description": "Ensure DNS server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.8": {
+    "description": "Ensure FTP server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.9": {
+    "description": "Ensure HTTP server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.10": {
+    "description": "Ensure IMAP and POP3 server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.11": {
+    "description": "Ensure Samba is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.12": {
+    "description": "Ensure HTTP Proxy server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.13": {
+    "description": "Ensure net-snmp is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.14": {
+    "description": "Ensure NIS server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.15": {
+    "description": "Ensure telnet-server is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.2.16": {
+    "description": "Ensure mail transfer agent is configured for local-only mode",
+    "level": 1,
+    "result": "Pass",
+    "duration": "5ms"
+  },
+  "2.2.17": {
+    "description": "Ensure nfs-utils is not installed or the nfs-server service is masked",
+    "level": 1,
+    "result": "Pass",
+    "duration": "1ms"
+  },
+  "2.2.18": {
+    "description": "Ensure rpcbind is not installed or the rpcbind service is masked",
+    "level": 1,
+    "result": "Pass",
+    "duration": "1ms"
+  },
+  "2.2.19": {
+    "description": "Ensure rsync is not installed or the rsyncd service is masked",
+    "level": 1,
+    "result": "Pass",
+    "duration": "1ms"
+  },
+  "2.3": {
+    "description": "Service Clients"
+  },
+  "2.3.1": {
+    "description": "Ensure NIS client is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "2.3.2": {
+    "description": "Ensure rsh client is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "2.3.3": {
+    "description": "Ensure talk client is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "2.3.4": {
+    "description": "Ensure telnet client is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "2.3.5": {
+    "description": "Ensure LDAP client is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "2.4": {
+    "description": "Ensure non-essential services are removed or masked",
+    "level": 1,
+    "result": "Manual"
+  },
+  "3": {
+    "description": "Network Configuration"
+  },
+  "3.1": {
+    "description": "Disable unused network protocols and devices"
+  },
+  "3.1.1": {
+    "description": "Disable IPv6",
+    "level": 1,
+    "result": "Fail",
+    "duration": "11ms"
+  },
+  "3.1.2": {
+    "description": "Ensure wireless interfaces are disabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "3.2": {
+    "description": "Network Parameters (Host Only)"
+  },
+  "3.2.1": {
+    "description": "Ensure IP forwarding is disabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "15ms"
+  },
+  "3.2.2": {
+    "description": "Ensure packet redirect sending is disabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "11ms"
+  },
+  "3.3": {
+    "description": "Network Parameters (Host and Router"
+  },
+  "3.3.1": {
+    "description": "Ensure source routed packets are not accepted",
+    "level": 1,
+    "result": "Fail",
+    "duration": "23ms"
+  },
+  "3.3.2": {
+    "description": "Ensure ICMP redirects are not accepted",
+    "level": 1,
+    "result": "Fail",
+    "duration": "24ms"
+  },
+  "3.3.3": {
+    "description": "Ensure secure ICMP redirects are not accepted",
+    "level": 1,
+    "result": "Fail",
+    "duration": "10ms"
+  },
+  "3.3.4": {
+    "description": "Ensure suspicious packets are logged",
+    "level": 1,
+    "result": "Fail",
+    "duration": "10ms"
+  },
+  "3.3.5": {
+    "description": "Ensure broadcast ICMP requests are ignored",
+    "level": 1,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "3.3.6": {
+    "description": "Ensure bogus ICMP responses are ignored",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "3.3.7": {
+    "description": "Ensure Reverse Path Filtering is enabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "11ms"
+  },
+  "3.3.8": {
+    "description": "Ensure TCP SYN Cookies is enabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "3.3.9": {
+    "description": "Ensure IPv6 router advertisments are not accepted",
+    "level": 1,
+    "result": "Fail",
+    "duration": "12ms"
+  },
+  "3.4": {
+    "description": "Uncommon Network Protocols"
+  },
+  "3.4.1": {
+    "description": "Ensure SCTP is disabled",
+    "level": 2,
+    "result": "Fail",
+    "duration": "12ms"
+  },
+  "3.5": {
+    "description": "Firewall Configuration"
+  },
+  "3.5.1": {
+    "description": "Configure firewalld"
+  },
+  "3.5.1.1": {
+    "description": "Ensure firewalld is installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "3.5.1.2": {
+    "description": "Ensure iptables-services not installed with firewalld",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "3.5.1.3": {
+    "description": "Ensure nftables not installed with firewalld",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "3.5.1.4": {
+    "description": "Ensure firewalld service enabled and running",
+    "level": 1,
+    "result": "Fail",
+    "duration": "11ms"
+  },
+  "3.5.1.5": {
+    "description": "Ensure firewalld default zone is set",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "3.5.1.6": {
+    "description": "Ensure network interfaces are assigned to appropriate zone",
+    "level": 1,
+    "result": "Manual"
+  },
+  "3.5.1.7": {
+    "description": "Ensure firewalld drops unnecessary services and ports",
+    "level": 1,
+    "result": "Manual"
+  },
+  "3.5.2": {
+    "description": "Configure nftables"
+  },
+  "3.5.2.1": {
+    "description": "Ensure nftables is installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "3.5.2.2": {
+    "description": "Ensure firewalld is not installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "3.5.2.3": {
+    "description": "Ensure iptables-services not installed with nftables",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "3.5.2.4": {
+    "description": "Ensure iptables are flushed with nftables",
+    "level": 1,
+    "result": "Pass",
+    "duration": "6ms"
+  },
+  "3.5.2.5": {
+    "description": "Ensure an nftables table exists",
+    "level": 1,
+    "result": "Fail",
+    "duration": "4ms"
+  },
+  "3.5.2.6": {
+    "description": "Ensure nftables base chains exist",
+    "level": 1,
+    "result": "Fail",
+    "duration": "14ms"
+  },
+  "3.5.2.7": {
+    "description": "Ensure nftables loopback traffic is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "13ms"
+  },
+  "3.5.2.8": {
+    "description": "Ensure nftables outbound and establishe dconnections are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "7ms"
+  },
+  "3.5.2.9": {
+    "description": "Ensure nftables default deny firewall policy exists",
+    "level": 1,
+    "result": "Fail",
+    "duration": "11ms"
+  },
+  "3.5.2.10": {
+    "description": "Ensure nftables service is enabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "-989ms"
+  },
+  "3.5.2.11": {
+    "description": "Ensure nftables rules are permanent",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "3.5.3": {
+    "description": "Configure iptables"
+  },
+  "3.5.3.1": {
+    "description": "Configure iptables software"
+  },
+  "3.5.3.1.1": {
+    "description": "Ensure iptables-services is installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "3.5.3.1.2": {
+    "description": "Ensure nftables is not installed with iptables",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "3.5.3.1.3": {
+    "description": "Ensure firewalld is not installed with iptables",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "3.5.3.2": {
+    "description": "Configure IPv4 iptables"
+  },
+  "3.5.3.2.1": {
+    "description": "Ensure iptables loopback traffic is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "4ms"
+  },
+  "3.5.3.2.2": {
+    "description": "Ensure iptables rules exist for all open ports",
+    "level": 1,
+    "result": "Manual"
+  },
+  "3.5.3.2.4": {
+    "description": "Ensure iptables default deny firewall policy",
+    "level": 1,
+    "result": "Fail",
+    "duration": "7ms"
+  },
+  "3.5.3.2.5": {
+    "description": "Ensure iptables rules are saved",
+    "level": 1,
+    "result": "Pass",
+    "duration": "6ms"
+  },
+  "3.5.3.2.6": {
+    "description": "Ensure iptables is enabled and running",
+    "level": 1,
+    "result": "Fail",
+    "duration": "8ms"
+  },
+  "3.5.3.3": {
+    "description": "Configure IPv6 ip6tables"
+  },
+  "3.5.3.3.1": {
+    "description": "Ensure ip6tables loopback traffic is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "3.5.3.3.2": {
+    "description": "Ensure ip6tables rules exist for all open ports",
+    "level": 1,
+    "result": "Manual"
+  },
+  "3.5.3.3.4": {
+    "description": "Ensure ip6tables default deny firewall policy",
+    "level": 1,
+    "result": "Fail",
+    "duration": "7ms"
+  },
+  "3.5.3.3.5": {
+    "description": "Ensure ip6tables rules are saved",
+    "level": 1,
+    "result": "Pass",
+    "duration": "7ms"
+  },
+  "3.5.3.3.6": {
+    "description": "Ensure ip6tables is enabled and running",
+    "level": 1,
+    "result": "Fail",
+    "duration": "10ms"
+  },
+  "4": {
+    "description": "Logging and Auditing"
+  },
+  "4.1": {
+    "description": "Configure System Accounting (auditd)"
+  },
+  "4.1.1": {
+    "description": "Ensure auditing is enabled"
+  },
+  "4.1.1.1": {
+    "description": "Ensure auditd is installed",
+    "level": 2,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "4.1.1.2": {
+    "description": "Ensure auditd service is enabled and running",
+    "level": 2,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "4.1.1.3": {
+    "description": "Ensure auditing for processes that start prior to auditd is enabled",
+    "level": 2,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "4.1.2": {
+    "description": "Configure Data Retention"
+  },
+  "4.1.2.1": {
+    "description": "Ensure audit log storage size is configured",
+    "level": 2,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "4.1.2.2": {
+    "description": "Ensure audit logs are not automatically deleted",
+    "level": 2,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "4.1.2.3": {
+    "description": "Ensure system is disabled when audit logs are full",
+    "level": 2,
+    "result": "Fail",
+    "duration": "8ms"
+  },
+  "4.1.2.4": {
+    "description": "Ensure audit_backlog_limit is sufficient",
+    "level": 2,
+    "result": "Not Implemented"
+  },
+  "4.1.3": {
+    "description": "Ensure events that modify date and time information are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "4.1.4": {
+    "description": "Ensure events that modify user/group information are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "4.1.5": {
+    "description": "Ensure events that modify the system's network environment are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "4.1.6": {
+    "description": "Ensure events tat modify the system's Mandatory Access Controls are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "4.1.7": {
+    "description": "Ensure login and logout events are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "4.1.8": {
+    "description": "Ensure session initiation information is collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "4.1.9": {
+    "description": "Ensure discretionary access control permissions modification events are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "4.1.10": {
+    "description": "Ensure unsuccessful unauthorized file access attempts are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "4.1.11": {
+    "description": "Ensure use of privileged commands is collected",
+    "level": 2,
+    "result": "Not Implemented"
+  },
+  "4.1.12": {
+    "description": "Ensure successful file system mounts are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "4.1.13": {
+    "description": "Ensure file deletion events by users are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "4.1.14": {
+    "description": "Ensure changes to system administration scope (sudoers) is collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "4.1.15": {
+    "description": "Ensure system administrator command executions (sudo)are collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "4.1.16": {
+    "description": "Ensure kernel module loading and unloading is collected",
+    "level": 2,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "4.1.17": {
+    "description": "Ensure the audit configuration is immutable",
+    "level": 2,
+    "result": "Fail",
+    "duration": "3ms"
+  },
+  "4.2": {
+    "description": "Configure Logging"
+  },
+  "4.2.1": {
+    "description": "Configure rsyslog"
+  },
+  "4.2.1.1": {
+    "description": "Ensure rsyslog is installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "4.2.1.2": {
+    "description": "Ensure rsyslog service is enabled and running",
+    "level": 1,
+    "result": "Pass",
+    "duration": "11ms"
+  },
+  "4.2.1.3": {
+    "description": "Ensure rsyslog default file permissions configured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "3ms"
+  },
+  "4.2.1.4": {
+    "description": "Ensure logging is configured",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "4.2.1.5": {
+    "description": "Ensure rsyslog is configured to send logs to a remote log host",
+    "level": 1,
+    "result": "Fail",
+    "duration": "7ms"
+  },
+  "4.2.1.6": {
+    "description": "Ensure remote rsyslog messages are only accepted on designated log hosts",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "4.2.2": {
+    "description": "Configure journald"
+  },
+  "4.2.2.1": {
+    "description": "Ensure journald is configured to send logs to rsyslog",
+    "level": 1,
+    "result": "Fail",
+    "duration": "3ms"
+  },
+  "4.2.2.2": {
+    "description": "Ensure journald is configured to compress large log files",
+    "level": 1,
+    "result": "Fail",
+    "duration": "3ms"
+  },
+  "4.2.2.3": {
+    "description": "Ensure journald is configured to write logfiles to persistent disk",
+    "level": 1,
+    "result": "Fail",
+    "duration": "3ms"
+  },
+  "4.2.3": {
+    "description": "Ensure permissions on all logfiles are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "158ms"
+  },
+  "4.2.4": {
+    "description": "Ensure logrotate is configured",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5": {
+    "description": "Access, Authentication and Authorization"
+  },
+  "5.1": {
+    "description": "Configure time-based job schedulers"
+  },
+  "5.1.1": {
+    "description": "Ensure cron daemon is enabled and running",
+    "level": 1,
+    "result": "Fail",
+    "duration": "10ms"
+  },
+  "5.1.2": {
+    "description": "Ensure permissions on /etc/crontab are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "5.1.3": {
+    "description": "Ensure permissions on /etc/cron.hourly are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "5.1.4": {
+    "description": "Ensure permissions on /etc/cron.daily are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "5.1.5": {
+    "description": "Ensure permissions on /etc/cron.weekly are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "5.1.6": {
+    "description": "Ensure permissions on /etc/cron.monthly are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "5.1.7": {
+    "description": "Ensure permissions on /etc/cron.d are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "5.1.8": {
+    "description": "Ensure cron is restricted to authorized users",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "5.1.9": {
+    "description": "Ensure at is restricted to authorized users",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "5.2": {
+    "description": "Configure sudo"
+  },
+  "5.2.1": {
+    "description": "Ensure sudo is installed",
+    "level": 1,
+    "result": "Fail",
+    "duration": "1ms"
+  },
+  "5.2.2": {
+    "description": "Ensure sudo commands use pty",
+    "level": 1,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "5.2.3": {
+    "description": "Ensure sudo log file exists",
+    "level": 1,
+    "result": "Fail",
+    "duration": "3ms"
+  },
+  "5.3": {
+    "description": "Configure SSH Server"
+  },
+  "5.3.1": {
+    "description": "Ensure permissions on /etc.ssh/sshd_config are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "5.3.2": {
+    "description": "Ensure permissions on SSH private host key files are configured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "9ms"
+  },
+  "5.3.3": {
+    "description": "Ensure permissions on SSH public host key files are configures",
+    "level": 1,
+    "result": "Pass",
+    "duration": "8ms"
+  },
+  "5.3.4": {
+    "description": "Ensure SSH access is limited",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.3.5": {
+    "description": "Ensure SSH LogLevel is appropriate",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.3.6": {
+    "description": "Ensure SSH X11 forwarding is disabled",
+    "level": 2,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "5.3.7": {
+    "description": "Ensure SSH MaxAuthTries is set to 4 or less",
+    "level": 1,
+    "result": "Fail",
+    "duration": "11ms"
+  },
+  "5.3.8": {
+    "description": "Ensure SSH IgnoreRhosts is enabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "5.3.9": {
+    "description": "Ensure SSH HostbasedAuthentication is disabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "5.3.10": {
+    "description": "Ensure SSH root login is disabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "8ms"
+  },
+  "5.3.11": {
+    "description": "Ensure SSH PermitEmptyPasswords is disabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "5.3.12": {
+    "description": "Ensure SSH Idle Timeout Interval is configured"
+  },
+  "5.3.13": {
+    "description": "Ensure only strong Ciphers are used",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.3.14": {
+    "description": "Ensure only strong MAC algorithms are used",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.3.15": {
+    "description": "Ensure only strong Key Exchange algorithms are used",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.3.12.1": {
+    "description": "Ensure SSH ClientAliveInterval is 900 or less",
+    "level": 1,
+    "result": "Fail",
+    "duration": "8ms"
+  },
+  "5.3.12.2": {
+    "description": "Ensure SSH ClientAliveCountMax is 0",
+    "level": 1,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "5.3.17": {
+    "description": "Ensure SSH LoginGraceTime is set to one minute or less",
+    "level": 1,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "5.3.18": {
+    "description": "Ensure SSH warning banner is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "8ms"
+  },
+  "5.3.19": {
+    "description": "Ensure SSH PAM is enabled",
+    "level": 1,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "5.3.20": {
+    "description": "Ensure SSH AllowTcpForwarding is disabled",
+    "level": 2,
+    "result": "Fail",
+    "duration": "9ms"
+  },
+  "5.3.21": {
+    "description": "Ensure SSH MaxStartups is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "8ms"
+  },
+  "5.3.22": {
+    "description": "Ensure SSH MaxSessions is limited",
+    "level": 1,
+    "result": "Fail",
+    "duration": "8ms"
+  },
+  "5.4": {
+    "description": "Configure PAM"
+  },
+  "5.4.1": {
+    "description": "Ensure password creation requirements are configured",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.4.2": {
+    "description": "Ensure lockout for failed password attempts is configured",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.4.3": {
+    "description": "Ensure password hashing algorithm is SHA512",
+    "level": 1,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "5.4.4": {
+    "description": "Ensure password reuse is limited",
+    "level": 1,
+    "result": "Fail",
+    "duration": "4ms"
+  },
+  "5.5": {
+    "description": "User Accounts and Environment"
+  },
+  "5.5.1": {
+    "description": "Set Shadow Password Suite Parameters"
+  },
+  "5.5.1.1": {
+    "description": "Ensure password expiration is 365 days or less",
+    "level": 1,
+    "result": "Fail",
+    "duration": "6ms"
+  },
+  "5.5.1.2": {
+    "description": "Ensure minimum days between password changes is configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "5.5.1.3": {
+    "description": "Ensure password expiration warning days is 7 or more",
+    "level": 1,
+    "result": "Pass",
+    "duration": "6ms"
+  },
+  "5.5.1.4": {
+    "description": "Ensure inactive password lock is 30 days or less",
+    "level": 1,
+    "result": "Error",
+    "duration": "6ms"
+  },
+  "5.5.1.5": {
+    "description": "Ensure all users last password change date is in the past",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.5.2": {
+    "description": "Ensure system accounts are secured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "5ms"
+  },
+  "5.5.3": {
+    "description": "Ensure default group for the root account is GID 0",
+    "level": 1,
+    "result": "Pass",
+    "duration": "3ms"
+  },
+  "5.5.4": {
+    "description": "Ensure default shell timeout is configured",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.5.5": {
+    "description": "Ensure default user umask is configured",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "5.6": {
+    "description": "Ensure root login is restricted to system console",
+    "level": 1,
+    "result": "Manual"
+  },
+  "5.7": {
+    "description": "Ensure access to the su command is restricted",
+    "level": 1,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "6": {
+    "description": "System Maintenance"
+  },
+  "6.1": {
+    "description": "System File Permissions"
+  },
+  "6.1.1": {
+    "description": "Audit system file permissions",
+    "level": 2,
+    "result": "Manual"
+  },
+  "6.1.2": {
+    "description": "Ensure permissions on /etc/passwd are configured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "0ms"
+  },
+  "6.1.3": {
+    "description": "Ensure permissions on /etc/passwd- are configured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "0ms"
+  },
+  "6.1.4": {
+    "description": "Ensure permissions on /etc/shadow are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "6.1.5": {
+    "description": "Ensure permissions on /etc/shadow- are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "6.1.6": {
+    "description": "Ensure permissions on /etc/gshadow- are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "6.1.7": {
+    "description": "Ensure permissions on /etc/gshadow are configured",
+    "level": 1,
+    "result": "Fail",
+    "duration": "0ms"
+  },
+  "6.1.8": {
+    "description": "Ensure permissions on /etc/group are configured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "0ms"
+  },
+  "6.1.9": {
+    "description": "Ensure permissions on /etc/group- are configured",
+    "level": 1,
+    "result": "Pass",
+    "duration": "0ms"
+  },
+  "6.1.10": {
+    "description": "Ensure no world writable files exist",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "6.1.11": {
+    "description": "Ensure no unowned files or directories exist",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "6.1.12": {
+    "description": "Ensure no ungrouped files or directories exist",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "6.1.13": {
+    "description": "Audit SUID executables",
+    "level": 1,
+    "result": "Manual"
+  },
+  "6.1.14": {
+    "description": "Audit SGID executables",
+    "level": 1,
+    "result": "Manual"
+  },
+  "6.2": {
+    "description": "User and Group Settings"
+  },
+  "6.2.1": {
+    "description": "Ensure accounts in /etc/passwd use shadowed passwords",
+    "level": 1,
+    "result": "Fail",
+    "duration": "4ms"
+  },
+  "6.2.2": {
+    "description": "Ensure /etc/shadow password fields are not empty",
+    "level": 1,
+    "result": "Pass",
+    "duration": "3ms"
+  },
+  "6.2.3": {
+    "description": "Ensure all groups in /etc/passwd exist in /etc/group",
+    "level": 1,
+    "result": "Pass",
+    "duration": "5ms"
+  },
+  "6.2.4": {
+    "description": "Ensure shadow group is empty",
+    "level": 1,
+    "result": "Error",
+    "duration": "2ms"
+  },
+  "6.2.5": {
+    "description": "Ensure no duplicate user names exist",
+    "level": 1,
+    "result": "Pass",
+    "duration": "3ms"
+  },
+  "6.2.6": {
+    "description": "Ensure no duplicate group names exist",
+    "level": 1,
+    "result": "Pass",
+    "duration": "2ms"
+  },
+  "6.2.7": {
+    "description": "Ensure no duplicate UIDs exist",
+    "level": 1,
+    "result": "Pass",
+    "duration": "3ms"
+  },
+  "6.2.8": {
+    "description": "Ensure no duplicate GIDs exist",
+    "level": 1,
+    "result": "Pass",
+    "duration": "2ms"
+  },
+  "6.2.9": {
+    "description": "Ensure root is the only UID 0 account",
+    "level": 1,
+    "result": "Pass",
+    "duration": "2ms"
+  },
+  "6.2.10": {
+    "description": "Ensure root PATH integrity",
+    "level": 1,
+    "result": "Manual"
+  },
+  "6.2.11": {
+    "description": "Ensure all users' home directories exist",
+    "level": 1,
+    "result": "Pass",
+    "duration": "3ms"
+  },
+  "6.2.12": {
+    "description": "Ensure users own their home directories",
+    "level": 1,
+    "result": "Pass",
+    "duration": "3ms"
+  },
+  "6.2.13": {
+    "description": "Ensure users' home directory permissions are 750 or more restrictive",
+    "level": 1,
+    "result": "Fail",
+    "duration": "2ms"
+  },
+  "6.2.14": {
+    "description": "Ensure users' dot files are not group or world writable",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "6.2.15": {
+    "description": "Ensure no users have .forward files",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "6.2.16": {
+    "description": "Ensure no users have .netrc files",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "6.2.17": {
+    "description": "Ensure no users have .rhosts files",
+    "level": 1,
+    "result": "Not Implemented"
+  },
+  "total_tests_passed": 36,
+  "total_tests_failed": 166,
+  "total_tests_performed": 247
+}
