@@ -2106,7 +2106,7 @@ class CISAudit:
             if len(record) >= 5:
                 output[id]['duration'] = record[4]
         
-       
+    
 
         # Http Request
         # Send an HTTP POST request with the JSON data
