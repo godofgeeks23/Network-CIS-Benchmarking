@@ -2091,6 +2091,10 @@ class CISAudit:
 
     def output_json(self, data):
         output = {}
+        total_tests_passed = 0
+        total_tests_failed = 0
+        total_tests_performed = 0
+
 
         for record in data:
             id = record[0]
@@ -2102,10 +2106,18 @@ class CISAudit:
 
             if len(record) >= 4:
                 output[id]['result'] = record[3]
+                total_tests_performed += 1
+                if record[3].lower() == 'pass':
+                    total_tests_passed += 1
+                elif record[3].lower() == 'fail':
+                    total_tests_failed += 1
 
             if len(record) >= 5:
                 output[id]['duration'] = record[4]
         
+        output['total_tests_passed'] = total_tests_passed
+        output['total_tests_failed'] = total_tests_failed
+        output['total_tests_performed'] = total_tests_performed
     
 
         # Http Request
