@@ -1,5 +1,5 @@
-const { Client } = require('@elastic/elasticsearch');
-const express = require('express');
+const { Client } = require('@elastic/elasticsearch');   // Update with your Elasticsearch client library
+const express = require('express');                    // Update with your desired Express version
 
 const app = express();
 const port = 3000;
