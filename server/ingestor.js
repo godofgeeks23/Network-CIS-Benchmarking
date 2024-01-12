@@ -2,6 +2,7 @@ const { Client } = require("@elastic/elasticsearch"); // Update with your Elasti
 const express = require("express"); // Update with your desired Express version
 
 const app = express();
+// set the port of our application
 const port = 3000;
 
 // Elasticsearch client
