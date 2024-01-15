@@ -1,7 +1,3 @@
-
-<a name="readme-top"></a>
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -26,15 +22,11 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/godofgeeks23/Network-CIS-Benchmarking)
 
-
-
 ### Built With
 
 - Node
 - Elasticsearch
 - Docker
-
-
 
 <!-- GETTING STARTED -->
 
@@ -46,9 +38,9 @@ To get a local copy up and running follow these simple steps.
 
 This project requires the following software to be installed on your system:
 
-* NodeJS (version used - v20.2.0)
+- NodeJS (version used - v20.2.0)
 
-* Docker (version used 24.0.7)
+- Docker (version used 24.0.7)
 
 ### Installation
 
@@ -110,8 +102,6 @@ This project requires the following software to be installed on your system:
 
    This will start the ingestor in cluster mode, utilizing all the cores of the system.
 
-
-
 <!-- USAGE EXAMPLES -->
 
 ## Usage
@@ -172,8 +162,6 @@ curl --location 'http://localhost:3000/ingest_bulk' \
 ]'
 ```
 
-
-
 <!-- Design -->
 
 ## Design
@@ -186,52 +174,48 @@ For efficient full-text search, Elasticsearch is a powerful choice. It provides 
 
 Full-Text Search and Querying:
 
-  Elasticsearch is designed for full-text search, making it well-suited for log data that often needs to be queried based on various fields.
+Elasticsearch is designed for full-text search, making it well-suited for log data that often needs to be queried based on various fields.
 
 Indexing:
 
-  Elasticsearch uses inverted indices for fast text-based search. This enables it to perform searches across large volumes of data efficiently.
+Elasticsearch uses inverted indices for fast text-based search. This enables it to perform searches across large volumes of data efficiently.
 
 Scalability:
 
-  Elasticsearch is horizontally scalable, allowing you to add more nodes to your cluster as your data volume grows. It automatically distributes data across nodes, providing high scalability.
+Elasticsearch is horizontally scalable, allowing you to add more nodes to your cluster as your data volume grows. It automatically distributes data across nodes, providing high scalability.
 
 Sharding:
 
-  Elasticsearch implements sharding, where it divides an index into multiple shards, each of which can be hosted on a separate node. This improves parallelism and helps distribute the data load.
+Elasticsearch implements sharding, where it divides an index into multiple shards, each of which can be hosted on a separate node. This improves parallelism and helps distribute the data load.
 
 Real-Time Data:
 
-  Elasticsearch provides real-time search capabilities, making it suitable for scenarios where near real-time analysis of logs is crucial.
+Elasticsearch provides real-time search capabilities, making it suitable for scenarios where near real-time analysis of logs is crucial.
 
 Flexibility:
 
-  It supports dynamic mapping, allowing you to index documents without predefining their structure. This flexibility is beneficial when dealing with diverse log formats. 
-  So we can process logs of other format as well.
+It supports dynamic mapping, allowing you to index documents without predefining their structure. This flexibility is beneficial when dealing with diverse log formats.
+So we can process logs of other format as well.
 
 RESTful API:
 
-  Elasticsearch provides a RESTful API, making it easy to integrate with other tools - apart from the CLI tool that we have built, for querying the logs.
+Elasticsearch provides a RESTful API, making it easy to integrate with other tools - apart from the CLI tool that we have built, for querying the logs.
 
 We have options for single node cluster and multi node cluster. Though multinode clusters are resource expensive but they have some pros over the other as follows:
 
-* Scalability: Distributed architecture allows for horizontal scaling. You can add more nodes to handle increased data volumes and query loads.
+- Scalability: Distributed architecture allows for horizontal scaling. You can add more nodes to handle increased data volumes and query loads.
 
-* High Availability: Improved fault tolerance with data replication across nodes. Even if one node fails, the cluster can continue to operate.
+- High Availability: Improved fault tolerance with data replication across nodes. Even if one node fails, the cluster can continue to operate.
 
-* Performance: Enhanced performance for large-scale deployments. Distributing data and queries across multiple nodes can improve response times.
-
+- Performance: Enhanced performance for large-scale deployments. Distributing data and queries across multiple nodes can improve response times.
 
 ### Why NodeJS?
 
-Node.js is well-suited for building scalable and asynchronous applications. It is efficient for handling a large number of concurrent connections due to its asynchronous, event-driven nature. 
+Node.js is well-suited for building scalable and asynchronous applications. It is efficient for handling a large number of concurrent connections due to its asynchronous, event-driven nature.
 
 ### Why Docker?
 
 Containerized applications using Docker for easy deployment and scalability.
-
-
-
 
 <!-- Features -->
 
@@ -243,7 +227,6 @@ Containerized applications using Docker for easy deployment and scalability.
 - [x] Scalability - as elasticsearch cluster is horizontally scalable, and also the ingestor can be run in cluster mode for multi core systems
 - [x] Elasticsearch used - which supports other search interfaces like DSL querying and also support for Native SQL RESTP API for intuitive querying
 
-
 ## Further Improvements
 
 - [ ] Make CLI more robust using Node CLI libraries like Commannder
@@ -251,10 +234,6 @@ Containerized applications using Docker for easy deployment and scalability.
 - [ ] More configurable options for elastic db and ingestor
 - [ ] Monitoring - adding monitoring and error-handling mechanisms to track the health of the log ingester and detect issues promptly.
 - [ ] Testing using JMeter
-
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
