@@ -6,7 +6,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Logs Ingestor and Querying Interface</h3>
+<h3 align="center">Logs Ingester and Querying Interface</h3>
 
   <p align="center">
     A system aimed at ingesting large amount of logs efficiently. Built using Node and Elasticsearch. 
