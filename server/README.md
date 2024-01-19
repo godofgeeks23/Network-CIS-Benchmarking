@@ -24,8 +24,8 @@
 
 ### Built With
 
-- Node
-- Elasticsearch
+- Node JS
+- ElasticSearch
 - Docker
 
 <!-- GETTING STARTED -->
