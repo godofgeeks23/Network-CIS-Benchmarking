@@ -16,13 +16,11 @@
   </p>
 </div>
 
-<!-- ABOUT THE PROJECT -->
-
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/godofgeeks23/Network-CIS-Benchmarking)
 
-### Built With
+### Built With (Tech Stack)
 
 - Node JS
 - ElasticSearch
