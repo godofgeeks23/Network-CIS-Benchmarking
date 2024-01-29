@@ -40,12 +40,10 @@ app.post("/ingest_bulk", async (req, res) => {
 
     // Ensure logsData is an array
     if (!Array.isArray(logsData)) {
-      return res
-        .status(400)
-        .json({
-          status: "error",
-          message: "Invalid request format. Expecting an array of logs.",
-        });
+      return res.status(400).json({
+        status: "error",
+        message: "Invalid request format. Expecting an array of logs.",
+      });
     }
 
     // Index the logs data into Elasticsearch in bulk
